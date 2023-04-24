@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <p>შეიყვანეთ რიცხვი:</p>
+
+    <input type="number" id="ricxvi" value="">
+
+    <button onclick="funqcia()">შეაფასე</button>
+
+    <p id="teqsti"></p>
+
+    <script>
+
+        function funqcia() {
+
+            let x = document.getElementById("ricxvi").value;
+            let y = document.getElementById("teqsti");
+
+            if (x > 0) {
+
+                y.innerHTML = ("რიცხვი დადებითია.");
+
+            } else if (x < 0) {
+                y.innerHTML = ("რიცხვი უარყოფითია.");
+            } else if (x == 0) {
+                y.innerHTML = ("რიცხვი ვერ იქნება 0-ის ტოლი.");
+            }
+        }
+
+    </script>
+
+</body>
+
+</html>
